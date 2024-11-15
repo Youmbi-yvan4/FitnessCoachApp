@@ -1,0 +1,21 @@
+.session-setup-container {
+    ion-card {
+      margin: 20px;
+  
+      ion-card-title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      ion-item {
+        margin-bottom: 15px;
+      }
+  
+      ion-button {
+        --border-radius: 8px;
+        --background: var(--ion-color-primary);
+      }
+    }
+  }
+  

@@ -1,0 +1,33 @@
+ion-item {
+  margin-bottom: 15px;
+}
+
+ion-avatar {
+  margin-right: 15px;
+}
+
+ion-label {
+  flex-grow: 1;
+}
+
+ion-button {
+  margin-left: 10px;
+}
+
+.info-box {
+  background-color: #f4f4f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+ion-item ion-label h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ion-item ion-label p {
+  font-size: 14px;
+  color: #666;
+}

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Setup Session</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="session-setup-container">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Session Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Objective</ion-label>
+        <ion-input [(ngModel)]="session.objective" placeholder="Enter session objective"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Date</ion-label>
+        <ion-datetime [(ngModel)]="session.date"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Time</ion-label>
+        <ion-datetime display-format="h:mm A" picker-format="h:mm A" [(ngModel)]="session.time"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Type of Sport</ion-label>
+        <ion-select [(ngModel)]="session.sportType" placeholder="Select Sport">
+          <ion-select-option *ngFor="let sport of sports" [value]="sport">{{ sport }}</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button expand="block" (click)="saveSession()">Save Session</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
